@@ -19,7 +19,7 @@ const Login = (props) => {
   //Use effect() function will executed after every component re-evaluation. So whenever this component function ran thereafter, this will run. And if we update the state  here in [](dependences) the component will run again. If dependency is empty and component run again but this time use effect function will not run again because it Run very first time when a component execute, If UseEffect() dependency[] is empty and component run again but this time use effect function will not run again because it Run very first time when a component execute.
 
 
-  // Basically use effect will run on after every state change regardless of any state but if we want to useEffect() run only for specific state change than we have to declare those state variable within dependency curly braces of useEffect()
+  // Basically use effect will run on after every state change without dependences regardless of any state but if we want to useEffect() run only for specific state change than we have to declare those state variable within dependency curly braces of useEffect()
 
   const emailChangeHandler = (event) => {
     setEnteredEmail(event.target.value);
